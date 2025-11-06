@@ -1,113 +1,150 @@
-# Experiment 2:Evaluating AI-Powered Summarization of Blockchain Technology
-### NAME:MARINO SARISHA T
-### REG NO:212223240084
-## Aim
-To create a clear undergraduate-level summary (120–150 words) of a 500-word article titled “The Basics of Blockchain Technology”, and then revise it into a simpler version with at least two real-world applications of blockchain.
+# EX-02-Cross-Platform-Prompting-Evaluating-Diverse-Techniques-in-AI-Powered-Text-Summarization
+
+## AIM
+To evaluate and compare the effectiveness of prompting techniques (zero-shot, few-shot, chain-of-thought, role-based) across different AI platforms (e.g., ChatGPT, Gemini, Claude, Copilot) in a specific task: text summarization.
+
+### REG.NO: 212223240084
+
+### NAME: MARINO SARISHA T
+
+
+## Scenario:
+You are part of a content curation team for an educational platform that delivers quick summaries of research papers to undergraduate students. Your task is to summarize a 500-word technical article on "The Basics of Blockchain Technology" using multiple AI platforms and prompting strategies.
+
+Your goal is to determine which combination of prompting technique + platform provides the best summary in terms of:
+
+Accuracy
+
+Coherence
+
+Simplicity
+
+Speed
+
+User experience
+
 ## Algorithm
-###  Step 1: Define Scope and Objectives
-1.1 Goal → Educational overview of blockchain fundamentals.
-1.2 Audience → Undergraduate students and beginners.
-1.3 Core Topics → Blocks, hashing, decentralization, consensus (PoW/PoS), digital keys, smart contracts, advantages/limitations, applications.
-### Step 2: Create Summary Outputs
-2.1 Draft a 120–150 word academic-level summary.
-2.2 Simplify the summary with everyday language.
-2.3 Add at least two real-world applications.
-### Step 3: Review & Edit
-3.1 Check clarity and readability (8th–10th grade level for simplified version).
-3.2 Ensure accuracy and consistency.
-3.3 Finalize outputs for submission.
-## Introduction
-Blockchain is one of the most influential technologies of the digital era. It is the foundation behind cryptocurrencies like Bitcoin and Ethereum, but its uses extend far beyond digital money. At its core, blockchain is a decentralized, transparent, and tamper-resistant way of recording transactions. This experiment explores blockchain fundamentals through two levels of summarization:
-- A concise undergraduate-level academic summary.
-- A simpler version with real-world examples for beginners.
 
-## Output
-### Step 1: Undergraduate-Level Summary (120–150 words)
+1. **Article Selection**
+   Select a \~500-word technical article titled *"The Basics of Blockchain Technology"*.
+````
+The Basics of Blockchain Technology
 
-Blockchain is a decentralized digital ledger that records transactions in blocks linked sequentially. Each block includes transaction data, a timestamp, and a cryptographic hash of the previous block, forming a secure chain resistant to tampering. Unlike centralized systems, blockchain is distributed across many nodes, ensuring transparency and reducing reliance on intermediaries. New entries are validated by consensus mechanisms such as Proof of Work (miners solve puzzles) or Proof of Stake (validators commit tokens). Transactions are secured with public-private key cryptography, while smart contracts—self-executing programs—enable automation without intermediaries. Benefits include enhanced security, transparency, and traceability, though challenges such as scalability, high energy consumption (for PoW), and governance complexities remain. Blockchains can be public (open to all) or permissioned (restricted). Beyond cryptocurrencies, they are applied in finance, supply-chain tracking, and asset verification.
+In recent years, blockchain technology has gained significant attention for its potential to revolutionize industries beyond its original use in cryptocurrencies like Bitcoin. At its core, blockchain is a decentralized, distributed ledger system that securely records transactions across a network of computers. What makes blockchain unique is its ability to ensure transparency, security, and immutability without the need for a central authority.
 
-(Word count: 147)
-### Step 2: Simplified Summary with Real-World Examples
-A blockchain is like a shared online notebook that many computers keep at the same time. Each page (block) is locked to the one before it, so no one can secretly change old records. To add new pages, the network agrees using rules like Proof of Work or Proof of Stake. People sign their transactions with digital keys, and smart contracts are small programs that run automatically when conditions are met.
-## Real-World Examples:
+What is Blockchain?
 
-##### - Money Transfers: People use Bitcoin or stablecoins to send money across countries in minutes without banks.
-##### - Supply Chains: Companies record the journey of food, medicines, or clothes from production to store shelves, so customers know their origin.
-##### - Blockchain is also popular for NFTs (digital collectibles) and land registry systems that are difficult to tamper with.
+A blockchain can be thought of as a chain of digital “blocks,” each containing a record of transactions. These blocks are linked together in chronological order using cryptographic techniques. Once a block is added to the chain, the information inside it cannot be altered without changing all subsequent blocks, making the system resistant to tampering or fraud.
 
-## Comparison Table: Blockchain Types
+Key Features of Blockchain
 
-##### Type of Blockchain	Access	Example Use Case	Examples
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/60aa210c-13a5-493e-a297-20200f9ac5c9" />
+Decentralization – Traditional databases are usually controlled by a central entity, but blockchain distributes the ledger across many nodes (computers). Every participant in the network has a copy of the blockchain, ensuring no single point of failure.
 
-## Mind Map of Blockchain Concepts
-### Blockchain Technology
+Transparency – Transactions recorded on the blockchain are visible to all participants. While identities can remain anonymous, the transaction history is permanent and accessible, which helps build trust.
 
-Definition: A decentralized, immutable, and distributed digital ledger.
+Immutability – Once data is recorded on a blockchain, it cannot be changed or deleted. This permanence reduces the risk of fraud and enhances accountability.
 
-##### Working Principles:
+Security – Blockchain uses cryptographic algorithms to secure transactions and control access. Each block is connected to the previous one using a unique hash, making it extremely difficult to alter data.
 
-- Blocks: Containers for transaction data.
+How Blockchain Works
 
-- Cryptographic Hashes: Unique codes that link blocks together securely.
+When a transaction occurs, it is verified by participants in the network through a process called consensus. Different blockchains use different consensus mechanisms, such as Proof of Work (PoW) or Proof of Stake (PoS). Once verified, the transaction is grouped into a block, which is then added to the chain in a way that ensures it cannot be modified without network-wide agreement.
 
-- Decentralized Network (P2P): Data is stored and validated by multiple participants.
+Applications of Blockchain
 
-- Consensus Mechanisms: Rules for agreeing on new blocks (e.g., Proof-of-Work, Proof-of-Stake).
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/0528508a-86e8-4d6c-be77-57d8c1dbfef1" />
+While blockchain is best known for enabling cryptocurrencies, its applications extend to many fields:
 
+Finance – Beyond digital currencies, blockchain can streamline cross-border payments, reduce fraud, and increase transparency in banking.
 
-#####  Key Features:
+Supply Chain Management – Companies can track goods from origin to destination, ensuring authenticity and reducing counterfeiting.
 
-- Decentralization: No single point of control.
+Healthcare – Patient records can be securely stored and shared across providers while maintaining privacy and accuracy.
 
-- Security: Cryptographically protected and tamper-resistant.
+Voting Systems – Blockchain-based voting can increase transparency, reduce fraud, and enhance trust in democratic processes.
 
-- Transparency: All participants can view the ledger (on public blockchains).
+Smart Contracts – These are self-executing contracts with conditions directly written into code, enabling automated and trustless transactions.
 
-- Immutability: Once recorded, data cannot be altered.
+Challenges in Blockchain
 
-##### Applications:
+Despite its advantages, blockchain faces several challenges. Scalability remains an issue, as processing a large number of transactions can be slow and energy-intensive, especially in PoW systems. Regulatory uncertainties and concerns about data privacy also pose hurdles to widespread adoption. Additionally, while immutability is a strength, it can also be a weakness if incorrect or fraudulent data is entered into the system.
 
-- Finance: Cryptocurrencies, international payments, decentralized finance (DeFi).
+Conclusion
 
-- Healthcare: Securely managing patient records.
+Blockchain technology represents a transformative shift in how data and transactions are managed. By combining decentralization, transparency, and security, it has the potential to disrupt industries ranging from finance to healthcare. However, challenges related to scalability, regulation, and energy consumption must be addressed before blockchain can achieve its full potential. As research and innovation continue, blockchain is likely to become a foundational technology for the digital future.
+````
 
-- Supply Chain: Tracking goods and ensuring authenticity.
+3. **Prompting Strategies Definition**
+   Prepare the following four prompting strategies:
 
-- Voting Systems: Creating tamper-proof voting records.
-<img width="512" height="369" alt="image" src="https://github.com/user-attachments/assets/4c899e7b-e2ce-4ada-8657-9a5e4c34293d" />
+   * **Zero-shot**: Directly ask the model to summarize without examples.
+   * **Few-shot**: Provide 2–3 examples of summaries for similar technical texts before asking for the summary.
+   * **Chain-of-Thought**: Prompt the model to explain or break down the text logically before summarizing.
+   * **Role-based**: Instruct the model to act as a specific role (e.g., “a university professor summarizing for freshmen”).
 
+4. **Platform Selection**
+   Use the following AI platforms:
 
-## Visualizing Blockchain Technology
-This image illustrates how blocks containing transaction data are linked together using unique hashes, forming a secure and distributed chain across a network of computers.
-This infographic provides a visual overview of the diverse industries being transformed by blockchain technology, from finance and logistics to healthcare and digital identity.
+   * ChatGPT (OpenAI)
+   * Gemini (Google)
+   * Claude (Anthropic)
+   * Copilot (Microsoft)
 
+5. **Execution**
+   For each platform:
 
-<img width="580" height="557" alt="image" src="https://github.com/user-attachments/assets/1a7f7902-6e7f-41bb-93c6-e34cafe4848b" />
+   * Apply each prompting strategy using the same input article.
+   * Record the output summary.
+   * Note time taken to generate the summary.
+```
+Summary:
 
+    Blockchain technology is a decentralized digital ledger that records transactions securely across a network of computers.
+    Unlike traditional databases controlled by one authority, blockchain distributes identical copies of data to many nodes, reducing the risk of failure or manipulation.
+    Each transaction is stored in a “block” and linked with others using cryptography, making the chain transparent, secure, and nearly impossible to alter.
+    Transactions are verified through consensus methods like Proof of Work or Proof of Stake. While first used for cryptocurrencies such as Bitcoin, blockchain now benefits industries like finance, supply chain, healthcare, and even voting systems.
+    It also enables “smart contracts,” which automatically execute coded agreements. Despite its promise, blockchain faces challenges in scalability, regulation, and energy use. Still, it is seen as a key technology for the digital future.
+```
 
-## Dynamic Understanding of Its Impact
+6. **Evaluation Criteria**
+   Evaluate each generated summary using the following:
 
-Blockchain's primary impact is its ability to create trust in a digital environment without a central authority. This fundamentally changes how we verify ownership, execute agreements (via smart contracts), and transfer value. It cuts out intermediaries, potentially lowering costs and increasing speed in fields like international finance and real estate.
+   * **Accuracy**: Does the summary correctly capture the main points of the article?
+   * **Coherence**: Is the summary logically structured and easy to follow?
+   * **Simplicity**: Is the language accessible for undergraduate students?
+   * **Speed**: How fast is the response?
+   * **User Experience**: Was the interface intuitive, and was the output easy to copy/save?
 
-## Limitations
-Despite its potential, blockchain faces challenges:
+7. **Scoring & Analysis**
 
-- Scalability: Many blockchains, like Bitcoin, can only process a small number of transactions per second compared to traditional systems like Visa.
+   * Assign scores (1 to 5) for each criterion across all combinations.
+   * Tabulate results for comparison.
+   * Identify the best-performing strategy-platform combination.
 
-- Energy Consumption: Proof-of-Work systems require immense computational power, leading to significant environmental concerns.
-
-- Complexity & Regulation: The technology is still complex for the average user, and the legal and regulatory landscape is uncertain and evolving.
-
-
-## Future Potential
-The future of blockchain looks dynamic. Key trends include the rise of Web3 (a decentralized internet), the tokenization of real-world assets like art and property, and integration with the Internet of Things (IoT) to create secure records for smart devices. As the technology matures and becomes more energy-efficient (with the shift to Proof-of-Stake), its role in building a more transparent and secure digital world will likely expand.
-
+---
 
 ## Result
-The experiment successfully produced:
-- A 120–150 word undergraduate-level summary of blockchain fundamentals.
-- A simplified summary with real-world examples for beginners.
-- Supporting material (Comparison Table, Mind Map, Visualizations, Future Trends) that makes the report comprehensive and engaging.
-This demonstrates how blockchain concepts can be adapted for multiple audiences while maintaining accuracy and clarity.
+
+| Platform | Prompt Type      | Accuracy | Coherence | Simplicity | Speed | UX | Total (/25) |
+| -------- | ---------------- | -------- | --------- | ---------- | ----- | -- | ----------- |
+| ChatGPT  | Zero-shot        | 4        | 4         | 4          | 5     | 5  | 22          |
+| ChatGPT  | Few-shot         | 5        | 5         | 5          | 4     | 5  | 24          |
+| ChatGPT  | Chain-of-Thought | 5        | 5         | 4          | 3     | 5  | 22          |
+| ChatGPT  | Role-based       | 5        | 5         | 5          | 4     | 5  | 24          |
+| Gemini   | Zero-shot        | 3        | 3         | 3          | 5     | 4  | 18          |
+| Gemini   | Few-shot         | 4        | 4         | 4          | 4     | 4  | 20          |
+| Claude   | Chain-of-Thought | 5        | 5         | 5          | 4     | 4  | 23          |
+| Claude   | Role-based       | 5        | 5         | 5          | 4     | 5  | 24          |
+| Copilot  | Zero-shot        | 3        | 3         | 3          | 5     | 4  | 18          |
+| Copilot  | Few-shot         | 4        | 4         | 4          | 4     | 4  | 20          |
+
+### PICTORIAL GRAPH
+<img width="2400" height="1600" alt="image" src="https://github.com/user-attachments/assets/223662a6-cf71-409a-b2c1-8e723b13dfde" />
+
+
+
+> **Best Performing Combination:**
+> **Claude + Role-based Prompting** and **ChatGPT + Few-shot Prompting** both scored **24/25**, showing high effectiveness in summarizing complex content in a simple and structured way for undergraduates.
+
+
+
+
