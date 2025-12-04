@@ -1,69 +1,90 @@
-# EX-02-Cross-Platform-Prompting-Evaluating-Diverse-Techniques-in-AI-Powered-Text-Summarization
-
+# EX-02: Cross-Platform Prompting - Evaluating Diverse Techniques in AI-Powered Text Summarization
+### MARINO SARISHA T
+### 212223240084
 ## AIM
-To evaluate and compare the effectiveness of prompting techniques (zero-shot, few-shot, chain-of-thought, role-based) across different AI platforms (e.g., ChatGPT, Gemini, Claude, Copilot) in a specific task: text summarization.
+To evaluate and compare the effectiveness of different prompting techniques (zero-shot, few-shot, chain-of-thought, and role-based) across multiple AI platforms (ChatGPT, Gemini, Claude, and Copilot) for the specific task of **text summarization**.
 
-## Scenario:
-You are part of a content curation team for an educational platform that delivers quick summaries of research papers to undergraduate students. Your task is to summarize a 500-word technical article on "The Basics of Blockchain Technology" using multiple AI platforms and prompting strategies.
+---
 
-Your goal is to determine which combination of prompting technique + platform provides the best summary in terms of:
+## ALGORITHM
 
-Accuracy
+1. **Define the Use Case**
+   - Task chosen: Text summarization of a medium-length technical article.
+   - Goal: Evaluate each platform’s ability to condense information while retaining accuracy, coherence, and context.
 
-Coherence
+2. **Create a Set of Prompts**
+   - **Zero-shot prompt:** “Summarize the following article in 100 words.”
+   - **Few-shot prompt:** Provide 2–3 examples of good summaries before the main text.
+   - **Chain-of-thought prompt:** “Summarize the article step-by-step by first identifying key points and then combining them.”
+   - **Role-based prompt:** “Act as a professional content curator. Write a precise summary suitable for a technical report.”
 
-Simplicity
+3. **Run the Experiment on Each Platform**
+   - Tested on **ChatGPT**, **Gemini**, **Claude**, and **Copilot**.
+   - Used identical prompts and similar input formats.
+   - Recorded:
+     - Response clarity
+     - Output time
+     - Ease of interaction
+     - Any inconsistencies or technical issues
 
-Speed
+4. **Evaluate Response Quality**
+   - **Accuracy:** Faithfulness to source content.
+   - **Clarity:** How easy it is to understand the summary.
+   - **Depth:** Inclusion of main ideas and logical flow.
+   - **Relevance:** Avoidance of unrelated or missing points.
 
-User experience
+5. **Compare Performance**
+   - Compared based on the criteria above.
+   - Observed which prompting technique produced the best results for each platform.
 
-## Algorithm
+---
 
-1. Summaries by Prompting Strategy (ChatGPT Example)
-# Zero-shot Prompting
+## COMPARISON TABLE
 
-Summary:
-Blockchain is a secure, digital record-keeping system where data is stored in blocks linked together. Once added, data cannot be altered, making it reliable. Unlike centralized databases, blockchain is decentralized, with many computers verifying transactions. This increases trust and prevents fraud. It is most commonly used in cryptocurrencies like Bitcoin, and in supply chains where products can be tracked from production to delivery. Governments are also testing blockchain for secure voting.
+| Platform | Prompt Type | Accuracy | Clarity | Depth | Relevance | Observations |
+|-----------|--------------|-----------|----------|--------|------------|---------------|
+| **ChatGPT** | Chain-of-thought | ⭐⭐⭐⭐☆ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐☆ | ⭐⭐⭐⭐⭐ | Very coherent summaries with contextual understanding. Excellent balance of depth and brevity. |
+| **Gemini** | Few-shot | ⭐⭐⭐⭐☆ | ⭐⭐⭐⭐☆ | ⭐⭐⭐⭐☆ | ⭐⭐⭐⭐☆ | Clear summaries, slightly generic phrasing, performs well with examples. |
+| **Claude** | Role-based | ⭐⭐⭐⭐☆ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐☆ | ⭐⭐⭐⭐☆ | Professional tone, maintains context, slightly verbose at times. |
+| **Copilot** | Zero-shot | ⭐⭐⭐☆ | ⭐⭐⭐☆ | ⭐⭐☆ | ⭐⭐⭐ | Quick but lacks nuance; suitable for short summaries or coding-related text. |
 
-# Few-shot Prompting (given 2 examples of simple summaries first)
+<img width="1064" height="399" alt="Screenshot 2025-12-04 104428" src="https://github.com/user-attachments/assets/791e9681-3182-45bb-a6e5-2c6a9daafe16" />
 
-Summary:
-Blockchain is like a digital notebook shared across many computers. Each page (block) is connected, forming a chain. Once written, the notes cannot be erased, ensuring security. Instead of one authority controlling it, everyone in the network helps verify the records, building trust. Real-world uses include Bitcoin, where people send money without banks, and supply chain tracking, which ensures products are genuine. This makes blockchain important in finance, business, and government services.
+---
 
-# Chain-of-Thought Prompting (step-by-step reasoning hidden, but simplified output)
+## RESULTS AND DISCUSSION
 
-Summary:
-Blockchain is a decentralized technology for recording data securely. Information is stored in linked blocks that cannot be altered once confirmed, ensuring transparency and trust. Because multiple computers validate the records, no single authority controls it. For example, cryptocurrencies like Bitcoin use blockchain to allow direct transactions without banks. In logistics, companies use it to track goods from production to delivery, reducing fraud. Some governments also explore it for voting systems. Overall, blockchain is a foundation for secure, transparent, and reliable digital applications.
+- **Best Performer:** **ChatGPT (Chain-of-Thought Prompting)** produced the most detailed and contextually rich summaries.
+- **Gemini** performed consistently well with few-shot prompts, showing improvement when given examples.
+- **Claude** delivered formal, well-structured summaries but slightly exceeded word limits.
+- **Copilot** was fast but less suitable for nuanced summarization tasks; better for concise or technical content.
 
-# Role-based Prompting (as “teacher explaining to undergraduates”)
+**Prompting Insights:**
+- Chain-of-thought prompting improved comprehension and logical sequencing.
+- Few-shot prompting enhanced structure and tone consistency.
+- Role-based prompting ensured domain-specific vocabulary.
+- Zero-shot prompting worked best for brief and general summaries.
 
-Summary:
-Think of blockchain as a chain of digital blocks, like Lego pieces connected in order. Each block stores information, and once it’s locked in, nobody can change it. Unlike a normal database controlled by one person, blockchain is shared across many computers, making it harder to cheat and easier to trust. A common example is Bitcoin, where blockchain records transactions without a bank. Another example is in supply chains, where companies track food or medicine to ensure they are safe and genuine. Governments are also testing it for secure voting. Blockchain is important because it makes data management more transparent, secure, and fair.
+---
 
+## CONCLUSION
 
-| Prompting Technique  | Accuracy   |  Coherence   |           Simplicity           | Speed   |           User Experience          |
-| -------------------- | ---------- | ------------ | ------------------------------ | ------- | ---------------------------------- |
-| Zero-shot            | High       | Good         | Moderate (a bit technical)     | Fast    | Simple, but less beginner-friendly |
-| Few-shot             | High       | Very good    | High (uses analogies)          | Medium  | Engaging, student-friendly         |
-| Chain-of-Thought     | Very High  | Very good    | Medium-High (clear but formal) | Slower  | Useful for clarity, less playful   |
-| Role-based (Teacher) | High       | Excellent    | Very High (simple analogies)   | Medium  | Feels natural for undergraduates   |
+This experiment demonstrates that **prompt engineering significantly influences the quality of AI-generated summaries**.  
 
+- **ChatGPT** with **chain-of-thought prompting** is ideal for detailed, high-quality summarization.
+- **Gemini** and **Claude** also deliver strong performance, especially with role-based or few-shot techniques.
+- **Copilot** is best suited for short, factual, or code-related summaries rather than narrative content.
 
-3. Key Takeaways
+**Recommendation:**  
+For academic or professional use, adopt **ChatGPT or Claude** with **chain-of-thought** or **role-based** prompting for the most coherent and contextually accurate results.
 
-Best Overall for Undergraduates: Role-based prompting (clear, simple, engaging).
+---
 
-Most Accurate & Detailed: Chain-of-thought.
-
-Fastest & Adequate: Zero-shot.
-
-Best Balance of Simplicity + Engagement: Few-shot with analogies.
-
-
-# Visual comparison:
-<img width="1462" height="1229" alt="image" src="https://github.com/user-attachments/assets/f5ccc5b1-31fc-49bb-9531-8a43d79c53c7" />
+## OUTPUT SCREENSHOTS
+<img width="539" height="365" alt="Screenshot 2025-12-04 104310" src="https://github.com/user-attachments/assets/1ac1605f-1a1a-4a62-8ad6-a88a18e861c2" />
 
 
-## Result
-The results of this evaluation will be presented in a structured format, providing a clear comparison of the effectiveness of different prompting techniques across the chosen AI platforms for the task of summarizing the technical article on "The Basics of Blockchain Technology."
+---
+
+## RESULT
+Thus, the effectiveness of various prompting techniques across multiple AI platforms was successfully evaluated for the task of text summarization.
